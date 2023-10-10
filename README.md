@@ -1,63 +1,69 @@
-This folder contains all the MATLAB functions, code, results, datasets, and base papers.
+Certainly, here's the content you provided rephrased for a `ReadMe.md` file for your project named "sEMG-Based-Hand-Movement-Classification-using-ML-and-DL-models":
 
-A.Classifier Folder contains all the results obtained using various classifiers.
-B. Data Folder contains the Datasets used in this project.
-C.Presentations Folder contains the presentations used in this project.
+# sEMG-Based Hand Movement Classification using ML and DL Models
 
-RUNNING THE CODE:
+This repository contains all the MATLAB functions, code, results, datasets, and base papers for a project focused on sEMG (surface electromyography)-based hand movement classification using machine learning (ML) and deep learning (DL) models.
 
-Base_1.mlx, Base_2.mlx, and Base_3.mlx are the main codes.
+## Project Structure
 
-1.Run Data_Generation.m file. 
-   Feature Extraction is done by this file.
+- **Classifier Folder**: Contains results obtained using various classifiers.
+- **Data Folder**: Contains the datasets used in this project.
+- **Presentations Folder**: Contains presentations used in this project.
 
-2. Run all the Base_*.mlx files.
-   They contain all the classification function calls and provide all the        
-   visual representation of accuracies and other performance parameters.
+## Running the Code
 
-Functions: There are 14 Feature related functions, 4 Performance metrics for multi-class 
-classification, 12 FFNN functions, 4 Bagged Trees functions, 4 SVM functions, and 4 k-NN functions.
+To run the code and perform hand movement classification, follow these steps:
 
-I. Features: SlopeSignChange.m 
-                  Difference_Absolute_Standard_Deviation.m
-                  Kurtosis.m
-                  RMS.m
-                  Second_Order_Moment.m
-                  Skewness.m
-                  SSI.m
-                  StandardDeviation.m
-                  WaveformLength.m
-                  WillisonAmplitude.m
-                  ZeroCrossing.m
-                  DAMV.m
-                  IEMG.m
-                  Variance.m
+1. Run `Data_Generation.m` file. This file handles feature extraction from the datasets.
 
-II. Performance Metrics: Accuracy.m
-                                     Precision.m
-                                     F1_Score.m
-                                     Recall.m
+2. Run all the `Base_*.mlx` files. These files contain the main classification code, including function calls and visual representations of accuracies and performance parameters.
 
+## Functions
 
-III. FFNN Related Functions: subject_64_*.m
-                                           subject_104_*.m
-                                           sub_all.m
-                                           sub_64_all.m
+### Features
+1. `SlopeSignChange.m`
+2. `Difference_Absolute_Standard_Deviation.m`
+3. `Kurtosis.m`
+4. `RMS.m`
+5. `Second_Order_Moment.m`
+6. `Skewness.m`
+7. `SSI.m`
+8. `StandardDeviation.m`
+9. `WaveformLength.m`
+10. `WillisonAmplitude.m`
+11. `ZeroCrossing.m`
+12. `DAMV.m`
+13. `IEMG.m`
+14. `Variance.m`
 
+### Performance Metrics
+1. `Accuracy.m`
+2. `Precision.m`
+3. `F1_Score.m`
+4. `Recall.m`
 
-IV. Bagged Trees Related Functions: Bagged_Trees_64.m
-                                                         Bagged_Trees_104.m
-                                                         Bagged_Trees_PCA.m
-                                                         Bagged_Trees_MRMR.m
+### FFNN Related Functions
+- `subject_64_*.m`
+- `subject_104_*.m`
+- `sub_all.m`
+- `sub_64_all.m`
 
+### Bagged Trees Related Functions
+- `Bagged_Trees_64.m`
+- `Bagged_Trees_104.m`
+- `Bagged_Trees_PCA.m`
+- `Bagged_Trees_MRMR.m`
 
-V. k-NN Related Functions:  KNN_64.m
-                                            kNN_104.m
-                                            KNN_PCA.m
-                                            kNN_MRMR.m
+### k-NN Related Functions
+- `KNN_64.m`
+- `kNN_104.m`
+- `KNN_PCA.m`
+- `kNN_MRMR.m`
 
+### SVM Related Functions
+- `SVM_64.m`
+- `SVM_104.m`
+- `SVM_PCA.m`
+- `SVM_MRMR.m`
 
-VI. SVM Related Functions: SVM_64.m
-                                           SVM_104.m
-                                           SVM_PCA.m
-                                           SVM_MRMR.m
+This project explores the classification of hand movements based on sEMG signals using a variety of ML and DL models. For detailed information, refer to the code files and explore the results obtained.
